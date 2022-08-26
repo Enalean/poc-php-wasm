@@ -15,12 +15,15 @@ It will add the fields "number1" and "number2" and put the result in the "res" f
 Finaly it will return the result as a string to the host.
 
 ## Build and execute
+First up, install `cargo-wasi`:
+- `> cargo install cargo-wasi`
+
 Build:
 - `> cargo build --target wasm32-wasi`
 
-If you want to precompile the .wasm you can also do:
+If you want to precompile the .wasm (You need to install Wasmtime first) you can also do:
 - `> wasmtime compile target/wasm32-wasi/debug/add-json-rs.wasm --epoch-interruption`
 
-Run: To run it use [wasmtime-ffi](../wasmtime-ffi/ffi-wasmtime.php)
+To run it use [wasmtime-ffi](../wasmtime-ffi/ffi-wasmtime.php)
 - `> cd ../wasmtime-ffi`
 - `> php ffi-wasmtime.php ../add-json-rs/target/wasm32-wasi/debug/add-json-rs.wasm json_input/work.json`
