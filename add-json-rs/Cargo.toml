@@ -1,0 +1,9 @@
+[package]
+name = "add-json-rs"
+description = "add program that is meant to be compiled to WebAssembly. Its interface is compatible with wasmtime-ffi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
