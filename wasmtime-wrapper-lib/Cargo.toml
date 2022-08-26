@@ -1,0 +1,20 @@
+[package]
+name = "wasmtimewrapper"
+version = "0.2.0"
+edition = "2021"
+
+[lib]
+name = "wasmtimewrapper"
+path = "src/lib.rs"
+crate-type = ["rlib", "dylib"]
+
+[build-dependencies]
+cbindgen = "^0.6.0"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0.56"
+wasmtime = "0.39.1"
+wasmtime-wasi = "0.39.1"
+wasi-common = "0.39.1"
