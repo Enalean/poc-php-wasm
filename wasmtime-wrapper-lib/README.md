@@ -4,7 +4,6 @@ This library only expose one function in order to make it much easier to interac
 It accepts `.wat`, `.wasm` and precompiled `.cwasm` files.
 
 ## Run our code
-- Modify the absolute path for the `CACHE_PATH` const in [lib.rs](src/lib.rs)
 - Install the Rust toolchain on your machine.
 - `cargo build`
 
