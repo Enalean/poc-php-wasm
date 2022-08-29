@@ -21,8 +21,8 @@ const MEMORY: &str = "memory";
 const ALLOC_FN: &str = "alloc";
 const MAIN_FN: &str = "add_json";
 
-// Define the cache path (MODIFY FOR YOUR SYSTEM)
-const CACHE_PATH: &str = "/home/bot/Documents/experimentations/PHP-FFI-Rustlib/wasmtime-wrapper-lib/CacheConfig.toml";
+// Define the cache path
+const CACHE_PATH: &str = env!("CACHE_CONFIG_PATH");
 
 #[no_mangle]
 /* Function to execute a WebAssembly module with the given JSON input */

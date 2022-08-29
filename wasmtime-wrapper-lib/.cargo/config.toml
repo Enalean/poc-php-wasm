@@ -1,0 +1,2 @@
+[env]
+CACHE_CONFIG_PATH = { value = "./CacheConfig.toml", relative = true }
