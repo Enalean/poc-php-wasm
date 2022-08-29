@@ -12,4 +12,3 @@ $json_out = json_decode($out);
 
 print "<>PHP Output JSON Object: \n";
 var_dump($json_out);
-?>

@@ -9,3 +9,6 @@ It is our example WASM module to prove that everything is working correctly.
 
 ## Building and running
 To build and run our code please follow the individual README.md in each folder, you can start with [the one in wasmtime-ffi](wasmtime-ffi/README.md)
+
+A [Nix shell](https://nixos.org/manual/nix/stable/command-ref/nix-shell.html) is provided to get access to the required development tools.
+If you want to build everything and execute the POC you can run `nix-shell --run './run.sh'`

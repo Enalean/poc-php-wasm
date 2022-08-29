@@ -15,9 +15,6 @@ It will add the fields "number1" and "number2" and put the result in the "res" f
 Finaly it will return the result as a string to the host.
 
 ## Build and execute
-First up, install `cargo-wasi`:
-- `> cargo install cargo-wasi`
-
 Build:
 - `> cargo build --target wasm32-wasi`
 
