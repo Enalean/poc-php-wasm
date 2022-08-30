@@ -14,12 +14,12 @@ popd
 pushd add-json-rs 
 
 cargo build --release --target wasm32-wasi
-wasmtime compile target/wasm32-wasi/release/add-json-rs.wasm --epoch-interruption
+../optimize-wasm/optimize-wasm.sh target/wasm32-wasi/release/add-json-rs.wasm
 
 popd
 
 pushd wasmtime-ffi
 
-php ffi-wasmtime.php ../add-json-rs/add-json-rs.cwasm json_input/work.json
+php ffi-wasmtime.php ../add-json-rs/add-json-rs-optimized.cwasm json_input/fatwork.json
 
 popd

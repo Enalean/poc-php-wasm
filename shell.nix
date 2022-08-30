@@ -11,6 +11,7 @@ pkgs.mkShell {
     pkgs.bash
     pkgs.rustup
     pkgs.wasmtime
+    pkgs.binaryen
     (pkgs.php81.buildEnv {
         extensions = { all, ... }: with all; [ ffi ];
         extraConfig = "ffi.enable=true";
