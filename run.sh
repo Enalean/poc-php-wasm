@@ -7,14 +7,14 @@ rustup target add wasm32-wasi
 
 pushd wasmtime-wrapper-lib
 
-cargo build
+cargo build --release
 
 popd
 
 pushd add-json-rs 
 
-cargo build --target wasm32-wasi
-wasmtime compile target/wasm32-wasi/debug/add-json-rs.wasm --epoch-interruption
+cargo build --release --target wasm32-wasi
+wasmtime compile target/wasm32-wasi/release/add-json-rs.wasm --epoch-interruption
 
 popd
 
