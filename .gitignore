@@ -1,2 +1,5 @@
 target/
 *.cwasm
+dist/
+benchmark-result.json
+benchmark-result.md
